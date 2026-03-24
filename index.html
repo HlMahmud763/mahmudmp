@@ -36,6 +36,45 @@ header p{font-size:1.2rem; margin-bottom:25px; color:#f0f0f0; line-height:1.6;}
 .social-links{margin-top:25px;}
 .social-links a{display:inline-block; margin:0 12px; font-size:1.7rem; color:#fff; transition:0.4s;}
 .social-links a:hover{color:#357ab8; transform: scale(1.2);}
+/* ===== RESPONSIVE FIX START (Do not change design) ===== */
+
+/* Prevent horizontal scroll */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all elements flexible */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent layout breaking */
+* {
+  max-width: 100%;
+}
+
+/* Flexible containers */
+.container, .wrapper, section, div {
+  max-width: 100%;
+}
+
+/* Table responsive */
+table {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+
+/* Mobile fine tuning (no design change) */
+@media (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+}
+
+/* ===== RESPONSIVE FIX END ===== */
 
 /* Main */
 main{max-width:1000px; margin:60px auto; padding:0 20px; display:grid; grid-template-columns:1fr 1fr; gap:40px;}
